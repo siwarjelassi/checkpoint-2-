@@ -6,7 +6,7 @@
 </head>
 <BODY>
 <center>
-        
+            <img classe="inline" id="logo" src="logo.gomycode.png">
             <div CLASS="inline" >  <a href="index.html"><H1>Home</H1></a></div>
             <div class="inline"> <a href="COURSES.HTML"><H1>Courses</H1></a> </DIV>
             <div class="inline"> <a href="CONTACT.HTML"><H1>Contact</H1></a> </div>
@@ -34,26 +34,29 @@
                <DIV ALIGN="CENTER">
                 
                         <h1 id="color">Feedback</h1>
-                        <button>B</button>
-                        <button>I</button> 
-                        <button>Underline</button>
+                        <button onclick="makeBold()">B</button>
+                        <button onclick="makeItalic()">I</button> 
+                        <button onclick="underlinetext()">Underline</button>
                 
-                        <select>
-                                <option>20px</option>
-                                <option>30px</option>
-                                <option>40px</option>
+                        <select onchange="size(this)"> size of font:
+                                <option value="20">20px</option>
+                                <option value="30">30px</option>
+                                <option value="40">40px</option>
                         </select>
+
                         <select>
                                 <option>Arial</option>
                                 <option>Verdana</option>
                                 <option>Geneva</option>
                         </select>
                      <div>
-                        <textarea cols="50" rows="10"></textarea>
+                        <textarea id="getText" cols="50" rows="10"></textarea>
                      </div>
                 </DIV> 
                
         </center>
+
+<script src="JS/main.js"></script>
         
 
 </BODY> 
